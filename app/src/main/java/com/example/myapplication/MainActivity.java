@@ -1,5 +1,4 @@
 package com.example.myapplication;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,7 +8,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-
 public class MainActivity extends AppCompatActivity {
     EditText etUsername, etPassword;
     Button btnLogin, btnCancel;
@@ -26,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         imgShow = findViewById(R.id.imgShow);
         sharedPreferences =
                 getSharedPreferences("LOGIN", MODE_PRIVATE);
-
         btnLogin.setOnClickListener(v -> {
             String username =
                     etUsername.getText().toString();
